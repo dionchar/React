@@ -23,7 +23,7 @@ function App() {
   );
 }
       
-      { featuPupId && <p>{ featPupId }</p> }
+      {featPupId && (
         <div>
           <h2>{featuredPup.name}</h2>
           <ul>
@@ -31,5 +31,5 @@ function App() {
             <li>Email: {featuredPup.email}</li>
           </ul>
         </div>
-
+      )}
 export default App
