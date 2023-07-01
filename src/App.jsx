@@ -2,10 +2,16 @@ import { useState } from 'react'
 import './App.css'
 import {puppyList} from './data.js'
 
-function App() {
-  const [puppies, setPuppies] = useState(puppyList);
-  const [featPupId, setFeatPupId] = useState(null);
+const [puppies, setPuppies] = useState(puppyList);
+const [featPupId, setFeatPupId] = useState(null);
 
+function App() {
+  return (
+    <div className="app"> {/* Use the 'app' class */}
+      {/* Your app content */}
+    </div>
+  );
+  
   function handleClick() {
     // some logic here
   }
